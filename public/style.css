@@ -72,15 +72,14 @@ input {
 }
 
 #exit-chat {
-    background-color: #e74c3c; /* Button background color */
-    color: #fff; /* Button text color */
-    border: none; /* Remove button border */
-    padding: 10px 20px; /* Padding inside the button */
-    cursor: pointer; /* Show a hand cursor on hover */
-    border-radius: 5px; /* Add some button border radius */
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/* Style for the exit button on hover */
 #exit-chat:hover {
     background-color: #c0392b;
 }
@@ -123,13 +122,8 @@ input {
 
 .user {
     margin: 2px auto;
-    /*font-weight: bold;*/
     color: #333;
     font-size: 22px;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 10px;*/
-    /*padding: 5px;*/
-    /*background-color: rgba(52, 152, 219, 0.33);*/
     background-color: #f1f1f1;
     width: 100%;
 }
@@ -145,7 +139,6 @@ input {
     overflow-y: scroll;
     border: 1px solid #ccc;
     background-color: rgba(255, 228, 196, 0.8);
-    /*justify-content: flex-end;*/
 }
 
 .type-box {
@@ -157,7 +150,6 @@ input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    /*margin-bottom: 10px;*/
 }
 
 #send-message {
@@ -203,29 +195,26 @@ input {
 
 .message-title {
     display: flex;
-    font-weight: bold; /* Make the title text bold */
-    white-space: nowrap; /* Prevent title from wrapping to the next line */
-    overflow: hidden; /* Hide overflow text */
-    text-overflow: ellipsis; /* Add an ellipsis (...) for overflow text */
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Style for the name, date, and time within the title */
 .message-title .name {
-    /*color: #ffc84f; !* Name color *!*/
-    margin-right: 10px; /* Spacing between name and date */
+    margin-right: 10px;
 }
 
 .message-title .date {
-    color: #777; /* Date color */
-    margin-right: 5px; /* Spacing between date and time */
+    color: #777;
+    margin-right: 5px;
 }
 
 .message-title .time {
-    color: #777; /* Time color */
+    color: #777;
 }
 
-/* Style for the message text */
 .message .text {
-    margin-top: 8px; /* Spacing between title and text */
-    color: #333; /* Text color */
+    margin-top: 8px;
+    color: #333;
 }

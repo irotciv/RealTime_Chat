@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.new-connect {
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+    color: red;
+}
+
+.chatroom {
+    display: none;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+label, .error {
+    font-size: 18px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#join-user {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+#header {
+    margin: 0;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#header h2 {
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#exit-chat {
+    background-color: #e74c3c; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Padding inside the button */
+    cursor: pointer; /* Show a hand cursor on hover */
+    border-radius: 5px; /* Add some button border radius */
+}
+
+/* Style for the exit button on hover */
+#exit-chat:hover {
+    background-color: #c0392b;
+}
+
+.chat-window {
+    width: 100%;
+    display: flex;
+}
+
+.users {
+    width: 25%;
+    height: 688px;
+    max-height: 688px;
+    text-align: center;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    background-color: rgba(52, 152, 219, 0.3);
+}
+
+.users h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    padding-bottom: 10px;
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.users h2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #333333;
+    bottom: -5px;
+    left: 0;
+}
+
+.user {
+    margin: 2px auto;
+    /*font-weight: bold;*/
+    color: #333;
+    font-size: 22px;
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 10px;*/
+    /*padding: 5px;*/
+    /*background-color: rgba(52, 152, 219, 0.33);*/
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+}
+
+.messages {
+    width: 99.9%;
+    height: 629px;
+    max-height: 629px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 228, 196, 0.8);
+    /*justify-content: flex-end;*/
+}
+
+.type-box {
+    display: flex;
+}
+
+#message-input {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /*margin-bottom: 10px;*/
+}
+
+#send-message {
+    width: 15%;
+    height: 40px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#send-message:hover {
+    background-color: #0056b3;
+}
+
+.status, .message {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.status {
+    max-width: 40%;
+    background-color: #f1f1f1;
+    color: crimson;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(70%, 5%);
+}
+
+.message {
+    max-width: 75%;
+    word-wrap: break-word;
+    width: fit-content;
+}
+
+.message-title {
+    display: flex;
+    font-weight: bold; /* Make the title text bold */
+    white-space: nowrap; /* Prevent title from wrapping to the next line */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add an ellipsis (...) for overflow text */
+}
+
+/* Style for the name, date, and time within the title */
+.message-title .name {
+    /*color: #ffc84f; !* Name color *!*/
+    margin-right: 10px; /* Spacing between name and date */
+}
+
+.message-title .date {
+    color: #777; /* Date color */
+    margin-right: 5px; /* Spacing between date and time */
+}
+
+.message-title .time {
+    color: #777; /* Time color */
+}
+
+/* Style for the message text */
+.message .text {
+    margin-top: 8px; /* Spacing between title and text */
+    color: #333; /* Text color */
+}
